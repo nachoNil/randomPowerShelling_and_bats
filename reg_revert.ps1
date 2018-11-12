@@ -22,4 +22,4 @@ foreach ($key in $keysTo1) {
     }
 }
 
-Read-Host -Prompt "Press Enter to exit"
+Read-Host "Press Enter to exit"
