@@ -1,6 +1,6 @@
 ﻿$regPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"
-$keysTo1 = @("EnableLUA")
-$keysTo0 = @("dontdisplaylastusername","Test")
+$keysTo1 = @("disablecad")
+$keysTo0 = @("PromptOnSecureDesktop","EnableLUA","dontdisplaylastusername","dontdisplaylockeduserid")
 
 foreach ($key in $keysTo0) {
     Set-ItemProperty $regPath -Name $key -Value "0"
