@@ -1,8 +1,3 @@
-<#
-"Company" > wanted
-"P4ssw0rd" > wanted
-#>
-
 #set needed variables
 Set-Alias 7z "$ENV:ProgramFiles\7-Zip\7z.exe"
 $src = "$ENV:UserProfile\Desktop\Spam\"
