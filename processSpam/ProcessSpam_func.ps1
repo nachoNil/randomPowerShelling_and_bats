@@ -47,7 +47,7 @@ function chkAndCreatePaths {
 
 #Function to check files on enduser machine and move files - delete spam folder after this
 function handleEnduserFiles {
-    Read-Host "- Press Enter when all files are in Spam folder and ready to be process"
+    Read-Host "- Press Enter when all files are in Spam folder and ready to be processed"
     $chk = (Get-ChildItem "$enduserPath\$srcType" -Include $srcType -Recurse -ErrorAction SilentlyContinue).Name   
     switch([string]::IsNullOrEmpty($chk)){
         $true { Write-Host "- No messages to process in $enduserPath" }
